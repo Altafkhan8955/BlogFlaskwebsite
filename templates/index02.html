@@ -1,0 +1,191 @@
+{% extends 'base.html' %}
+{% block content %}
+
+
+	<div class="bgimg">
+		<nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top">
+			<div class="container">
+				<a href="#" class="navbar-brand text-warning font-weight-bold">CODETECH</a>
+
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsenavbar">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+
+				<div class="collapse navbar-collapse text-center" id="collapsenavbar">
+					<ul class="navbar-nav ml-auto">
+						<li class="nav-item">
+							<a href="{{ url_for('logout')}}" class="nav-link text-white">Logout</a>
+						</li>
+					<li class="nav-item">
+							<a href="{{ url_for('register')}}" class="nav-link text-white">Signup</a>
+						</li>
+						<li class="nav-item">
+							<a href="{{ url_for('login')}}" class="nav-link text-white">Login</a>
+						</li>
+						<div class="dropdown ">
+						<li class="nav-item">
+							<a href="{{ url_for('blogs')}}" class="nav-link text-white dropdown-toggle" data-toggle="dropdown">Blogs</a>
+							<div class="dropdown-menu">
+                            <a class="dropdown-item" href="{{ url_for('createblog')}}">Create Blog</a>
+                            <a class="dropdown-item" href="{{ url_for('viewblog')}}">View Blog</a>
+                            <a class="dropdown-item" href="{{ url_for('listAllBlog')}}">List All Blog</a>
+                        </div>
+                         </div>
+						</li>
+						<li class="nav-item">
+							<a href="#" class="nav-link text-white">CONTACT</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<div class="container text-center text-white headerset">
+			<h2>Welcome To Our Blogs!</h2>
+			<h1>IT'S NICE TO MEET YOU</h1>
+			<button class="btn btn-warning text-white btn-lg">Check More</button>
+		</div>
+	</div>
+
+
+<!--***********************************Our service Start*******************-->
+
+<section class="container ourservice text-center" id="service">
+	<h1>SERVICES</h1>
+	<p>Team pervide same service and offers</p>
+    <div class="row rowsetting">
+	<div class="col-lg-4 col-md-4 col-sm-4 col-12 d-block m-auto">
+		<div class="imgsetting d-block m-auto bg-warning"><i class="fa fa-shopping-cart fa-3x text-white"></i></div>
+		<h2>E-Commerce</h2>
+		<p>This site same Commercial project pervide and best project quality and instant deel and delivery low rate and no delivery charge.</p>
+	</div>
+	<div class="col-lg-4 col-md-4 col-sm-4 col-12 d-block m-auto">
+		<div class="imgsetting d-block m-auto bg-warning"><i class="fa fa-desktop fa-3x text-white"></i></div>
+		<h2>Responsive Design.</h2>
+		<p>The web development team responsive web development and differnt device screen accourding to large screen and mediam mobile screen accourding responsive.</p>
+	</div>
+	<div class="col-lg-4 col-md-4 col-sm-4 col-12 d-block m-auto">
+		<div class="imgsetting d-block m-auto bg-warning"><i class="fa fa-lock fa-3x text-white"></i></div>
+		<h2>Web Security.</h2>
+		<p>The Hacker team very expriencess like web security xss attack and port scaning sql blidsql attack pentrast testing and fully web security team.</p>
+	</div>
+	</div>
+</section>
+
+
+<!--***********************************Our service End*******************-->
+<!--***********************************Portfolia Start*******************-->
+
+<section class="portfolia bg-light" id="portfolia">
+	<div class="container text-center">
+		<h1>PORTFOLIA</h1>
+		<p>This page team pervide service show </p>
+
+		<div class="row">
+			<div class="col-lg-4 col-md-4 col-sm-10 col-12 d-block m-auto">
+				<div class="card">
+					<img src="{{ url_for('static', filename='image/portfolia1.jpg')}}" class="card-img img-fluid">
+					<div class="card-body">
+						<h2 class="card-title">Threads</h2>
+						<p class="card-text">Illustration</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-4 col-md-4 col-sm-10 col-12 d-block m-auto">
+				<div class="card">
+					<img src="{{ url_for('static', filename='image/portfolia2.jpg')}}" class="card-img img-fluid">
+					<div class="card-body">
+						<h2 class="card-title">Explore</h2>
+						<p class="card-text">Graphic Design</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-4 col-md-4 col-sm-10 col-12 d-block m-auto">
+				<div class="card">
+					<img src="{{ url_for('static', filename='image/portfolia3.jpg')}}" class="card-img img-fluid">
+					<div class="card-body">
+						<h2 class="card-title">Finish</h2>
+						<p class="card-text">Identity</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-lg-4 col-md-4 col-sm-10 col-12 d-block m-auto">
+				<div class="card">
+					<img src="{{ url_for('static', filename='image/portfolia4.jpg')}}" class="card-img img-fluid">
+					<div class="card-body">
+						<h2 class="card-title">Southwest</h2>
+						<p class="card-text">Website Design</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-4 col-md-4 col-sm-10 col-12 d-block m-auto">
+				<div class="card">
+					<img src="{{ url_for('static', filename='image/portfolia5.jpg')}}" class="card-img img-fluid">
+					<div class="card-body">
+						<h2 class="card-title">Lines</h2>
+						<p class="card-text">Branding</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-4 col-md-4 col-sm-10 col-12 d-block m-auto">
+				<div class="card">
+					<img src="{{ url_for('static', filename='image/portfolia6.jpg')}}" class="card-img img-fluid">
+					<div class="card-body">
+						<h2 class="card-title">Window</h2>
+						<p class="card-text">Photography</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+
+<!--***********************************Portfolia End*******************-->
+
+<!--***********************************Ourteam Start*******************-->
+
+<section class="ourteam" id="ourteam">
+	<div class="container text-center">
+		<h1>OUR AMAZING TEAM</h1>
+		<p>Web Developer and Ethical hacker team</p>
+		<div class="row teamsetting bg-light">
+			<div class="col-lg-4 col-md-4 col-sm-10 col-12 d-block m-auto bg-">
+				<figure class="figure">
+					<img src="{{ url_for('static', filename='image/team1.jpg')}}" class="figure-img img-fluid rounded-circle" height="250px" width="250px" >
+					<figcaption>
+						<h4>Altaf khAn</h4>
+						<p class="figure-caption">Ethical Hacker</p>
+					</figcaption>
+				</figure>
+			</div>
+			<div class="col-lg-4 col-md-4 col-sm-10 col-12 d-block m-auto bg-">
+				<figure class="figure">
+					<img src="{{ url_for('static', filename='image/team2.jpg')}}" class="figure-img img-fluid rounded-circle" height="250px" width="250px" >
+					<figcaption>
+						<h4>Zoya Aktar</h4>
+						<p class="figure-caption">Front developer</p>
+					</figcaption>
+				</figure>
+			</div>
+			<div class="col-lg-4 col-md-4 col-sm-10 col-12 d-block m-auto bg-">
+				<figure class="figure">
+					<img src="{{ url_for('static', filename='image/team3.jpg')}}" class="figure-img img-fluid rounded-circle" height="250px" width="250px" >
+					<figcaption>
+						<h4>Zahan Aktar</h4>
+						<p class="figure-caption">Backend developer</p>
+					</figcaption>
+				</figure>
+			</div>
+		</div>
+	</div>
+</section>
+
+
+<!--***********************************Ourteam End*******************-->
+
+
+
+{% endblock %}
+
